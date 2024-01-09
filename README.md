@@ -15,30 +15,33 @@ This is a nodejs backend built using version 20.10.7.
 
 src/
 <br>
-*index.ts - Main file of the app.
-*context.ts - Context of the main app.
-*context.type.ts - Context type of the main app.
-*datasource.ts - Main file of TypeORM.
+  index.ts - Main file of the app.
+  <br>
+  context.ts - Context of the main app.
+  <br>
+  context.type.ts - Context type of the main app.
+  <br>
+  datasource.ts - Main file of TypeORM.
 
 seeders/
 <br>
-*seeder.ts - Seeds the DB in case it's empty.
+  seeder.ts - Seeds the DB in case it's empty.
 
 entities/
 <br>
-*All models and relationships used by TypeORM and TypeGraphql.
+  All models and relationships used by TypeORM and TypeGraphql.
 
 helpers/
 <br>
-*Functions that help to get desired values for another functions.
+  Functions that help to get desired values for another functions.
 
 migrations/
 <br>
-*In this folder should appear all migrations created by the user. The first one is already generated.
+  In this folder should appear all migrations created by the user. The first one is already generated.
 
 resolvers/
 <br>
-*All resolvers to make use of GraphQL.
+  All resolvers to make use of GraphQL.
 
 
 ## Run the app 

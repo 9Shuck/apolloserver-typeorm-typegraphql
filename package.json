@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/cjs/index.js",
+  "module": "./build/esm/index.js",
+  "types": "./build/typings/index.d.ts",
+  "scripts": {
+    "compile": "tsc",
+    "start": "npm run compile && node --env-file=.env ./build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.10.0",
+    "bcrypt": "^5.1.1",
+    "graphql": "^16.8.1",
+    "graphql-scalars": "^1.22.4",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.2.1",
+    "type-graphql": "^2.0.0-beta.4",
+    "typeorm": "^0.3.19"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.7",
+    "typescript": "^5.3.3"
+  },
+  "exports": {
+    ".": {
+      "require": "./build/cjs/index.js",
+      "import": "./build/esm/index.js",
+      "types": "./build/typings/index.d.ts"
+    }
+  }
+}
